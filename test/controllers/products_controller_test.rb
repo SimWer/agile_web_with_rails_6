@@ -48,7 +48,7 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
               product: {
                   description: @product.description,
                   image_url: @product.image_url,
-                  price: @product.price, 
+                  price: @product.price,
                   title: @title
               }
           }
