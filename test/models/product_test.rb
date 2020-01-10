@@ -14,7 +14,9 @@ class ProductTest < ActiveSupport::TestCase
   end
 
   test "product price must be positive" do
-    product = Product.new(title: "yyy", description: "yyy", image_url: "yyy.jpg")
+    product = Product.new(title:"This is 10",
+                          description: "yyy",
+                          image_url: "yyy.jpg")
     product.price = -1
     assert product.invalid?
     assert_equal ["must be greater than or equal to 0.01"],
