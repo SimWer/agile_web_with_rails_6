@@ -39,7 +39,7 @@ header.main {
   display: flex;
   display: -webkit-flex;
   flex-direction: column; // for mobile layout is horizontal
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 
   @media (min-width: 30em) {
@@ -49,11 +49,11 @@ header.main {
   nav {
     padding-bottom: 1em;
     background: #141;
-    max-width: 12.5%;
     text-align: center; // mobile has centered nav
 
     @media(min-width: 30em) {
       text-align: left; // desktop is left-aligned
+      max-width: 12.5%;
       padding: 1em;
     }
     ul {
@@ -90,4 +90,15 @@ header.main {
       padding: 0.5em;
     }
   }
+}
+
+.notice, #notice {
+  background: #40dd67;
+  border-radius: 0.5em;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 0.14em;
+  padding: 1.2em;
+  text-align: center;
+  margin: 1em;
 }
