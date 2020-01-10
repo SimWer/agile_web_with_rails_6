@@ -3,6 +3,7 @@
 <% end %>
 
 <h1>Your Pragmatic Catalog</h1>
+<h1> <%= session[:counter] >= 5? "You have visited this page " + pluralize(session[:counter], "time") + " without making an order!": " " %></h1>
 
 <ul class="catalog">
   <% cache @products do %>
