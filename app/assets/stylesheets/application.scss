@@ -49,6 +49,7 @@ header.main {
   nav {
     padding-bottom: 1em;
     background: #141;
+    max-width: 12.5%;
     text-align: center; // mobile has centered nav
 
     @media(min-width: 30em) {
