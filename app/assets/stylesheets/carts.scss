@@ -49,20 +49,9 @@
     background-color: #b52808;
     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.26);
   }
-
-  td input[type="submit"] {
-    background-color: white;
-    border: none;
-    font-family: "Lato";
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-  }
-
-  td input[type="submit"]:hover {
-    background-color: white;
-    border: none;
-    color: blue;
-    cursor: pointer;
+  .actions {
+    text-align: right;
+    display: inline;
   }
 
 }

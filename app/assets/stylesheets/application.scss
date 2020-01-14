@@ -13,10 +13,13 @@
  *= require_tree .
  *= require_self
  */
-
+html {
+  height: 100%
+}
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 // Logo on header
 header.main {
@@ -35,7 +38,7 @@ header.main {
 .content {
   margin: 0;
   padding: 0;
-
+  height: 100%;
   display: flex;
   display: -webkit-flex;
   flex-direction: column; // for mobile layout is horizontal
@@ -117,3 +120,4 @@ header.main {
     }
   }
 }
+
