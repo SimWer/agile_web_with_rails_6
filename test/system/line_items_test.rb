@@ -39,7 +39,5 @@ class LineItemsTest < ApplicationSystemTestCase
     page.accept_confirm do
       click_on "Destroy", match: :first
     end
-
-    assert_text "Line item was successfully destroyed"
   end
 end
