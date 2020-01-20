@@ -20,9 +20,9 @@
         <td><%= order.address %></td>
         <td><%= order.email %></td>
         <td><%= order.pay_type %></td>
-        <td><%= link_to 'Show', order %></td>
-        <td><%= link_to 'Edit', edit_order_path(order) %></td>
-        <td><%= link_to 'Destroy', order, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', order_path(:locale, order.id) %></td>
+        <td><%= link_to 'Edit', edit_order_path(:locale, order.id) %></td>
+        <td><%= link_to 'Destroy', order_path(:locale, order.id), method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
